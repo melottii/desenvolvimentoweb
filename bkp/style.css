@@ -30,7 +30,7 @@ div#area {
 
 div#search_area {
 	position: relative;
-	width: 15%;
+	width: 20%;
 	height: 100%;
 	background: #FFFFFF;
 	display: flex;
@@ -56,22 +56,10 @@ div#choice_icons {
     font-style: normal;
     letter-spacing: 2px;
     font-family: 'Cinzel', serif;
-    font-size: 20px;
-	margin-top: 30%;
+    font-size: 25px;
+	margin-top: 15%;
 	letter-spacing: 0.2em;
 	-webkit-text-stroke-width: 1px;
-}
-
-
-div#choice_icons_cinz {
-    text-align: center;
-    font-style: normal;
-    letter-spacing: 2px;
-	color: #727272;
-    font-family: 'Cinzel', serif;
-    font-size: 20px;
-	margin-top: 30%;
-	letter-spacing: 0.2em;
 }
 
 
@@ -100,8 +88,7 @@ div#choice_icons_cinz {
 
 #aside {
     margin-top: 20px;
-	overflow-y: scroll;
-    width: calc(100% - 15% - 50px);
+    width: calc(100% - 20% - 50px);
 }
 
 
@@ -153,8 +140,8 @@ div#choice_icons_cinz {
 .item {
 	border: 1px solid black;
 	background: #FFFFFF;
-	height: 180px;
-	width: 190px;
+	height: 230px;
+	width: 230px;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 30px;
 }
@@ -170,8 +157,7 @@ div#choice_icons_cinz {
 #class_description {
 	font-family: 'Cinzel', serif;
 	color: #696969;
-	font-size: 20px;
 	letter-spacing: 0.2em;
 	text-align: center;
-	margin-top: 15px;
+	margin-top: 10px;
 }
