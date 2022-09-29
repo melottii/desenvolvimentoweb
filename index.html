@@ -1,114 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="UTF-8">
-    <meta name= "viewport"
-    content="width=device-width, initial-scale=1.0">
-    <title> RM - Creation</title>
-    <base target="_top">
-  </head>
-  <body>
-    <div id="area">
-      <div id="search_area">
-        <img src="vetor-teste.jpg" class="user" alt="text">
-        <div id="person_name">
-          Matheus Melotti
-        </div>
+<html>
+<head>
+	<title>Damas</title>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section id="info">
+		<h1>TURNO: <span></span></h1>
+		<div>
+			<div id="white-counter">Peças Brancas: <span></span></div>
+			<div id="black-counter">Peças Pretas: <span></span></div>
+		</div>
+		<button class="btn" onclick="init()">Reiniciar</button>
+	</section>
+	<main></main>
+	<footer>
+		<ul>
+			<li><a href="https://github.com/brunoventura/"><img src='img/github.png' /></a></li>
+			<li><a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button"><img src='img/linkedin-icon.png' /></a></li>
+		</ul>
+	</footer>
 
-        <div id="choice_icons">
-          Classes
-        </div>
-
-        <div id="choice_icons_cinz">
-          Raças
-        </div>
-
-        <div id="choice_icons_cinz">
-          Perfil
-        </div>
-      </div>
-      <div id="aside">
-        <div id="topo">
-                <p id="player_title">Sarun</p>
-            <button id="new_game">NEW CLASS</button>
-        </div>
-        <div id="games">
-          Dnd 5e Classes
-          <div id="classes">
-            <div class="item">
-              <img src="classes/Bardo.png" alt="text"/>
-              <p id="class_description">
-                Bardo
-              </p>
-            </div>
-
-            <div class="item">
-              <img src="classes/Bruxo.png" alt="text"/>
-              <p id="class_description">
-                Bruxo
-              </p>
-            </div>
-
-            <div class="item">
-              <img src="classes/Clérigo.png" alt="text"/>
-              <p id="class_description">
-                Clérigo
-              </p>
-            </div>
-
-            <div class="item">
-              <img src="classes/Feiticeiro.png" alt="text"/>
-              <p id="class_description">
-                Feiticeiro
-              </p>
-            </div>
-
-            <div class="item">
-              <img src="classes/Guerreiro.png" alt="text"/>
-              <p id="class_description">
-                Guerreiro
-              </p>
-            </div>
-          </div>
-          <div id="classes">
-            <div class="item">
-              <img src="classes/Ladino.png" alt="text"/>
-              <p id="class_description">
-                Ladino
-              </p>
-            </div>
-
-            <div class="item">
-              <img src="classes/Mago.png" alt="text"/>
-              <p id="class_description">
-                Mago
-              </p>
-            </div>
-
-            <div class="item">
-              <img src="classes/Monge.png" alt="text"/>
-              <p id="class_description">
-                Monge
-              </p>
-            </div>
-
-            <div class="item">
-              <img src="classes/Paladino.png" alt="text"/>
-              <p id="class_description">
-                Paladino
-              </p>
-            </div>
-
-            <div class="item">
-              <img src="classes/Patrulheiro.png" alt="text"/>
-              <p id="class_description">
-                Patrulheiro
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+	<script src="app.js" ></script>
+</body>
 </html>
