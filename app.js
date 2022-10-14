@@ -5,5 +5,5 @@ const port = process.env.PORT || 3000
 
 const servidor = new Server(hostname, port)
 
-//servidor.ligarServidorDesenvolvimento()
-servidor.ligarServidorHeroku()
+// servidor.ligarServidorHomologacao()
+servidor.ligarServidorDesenvolvimento()

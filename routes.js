@@ -2,8 +2,7 @@ const fs = require('fs');
 
 let routes = {
     default: (res) => responde(res, "index.html"),
-    rota2: (res) => responde(res, "index2.html"),
-    notFound: (res) => responde(res, "404.html"),
+    notFound: (res) => responde(res, "error404.html"),
   }
 
 function responde(res, pag){

@@ -7,8 +7,8 @@ class Server {
     this.hostname = hostname
     this.port = port
   }
-
-  ligarServidorHeroku(){
+    
+  ligarServidorHomologacao(){
     const server = http.createServer(function(req, res) {
       let parsedURL = url.parse(req.url, true)
       let path = parsedURL.pathname
@@ -19,7 +19,7 @@ class Server {
       let route = typeof routes[path] !== "undefined" ? routes[path] : routes["notFound"]
       route(res)
     } )
-    server.listen(this.port, () => {
+    server.listen(this.port, this.hostname, () => {
       console.log(`Server running at http://${this.hostname}:${this.port}/`)
     })
   }
@@ -35,7 +35,7 @@ class Server {
       let route = typeof routes[path] !== "undefined" ? routes[path] : routes["notFound"]
       route(res)
     } )
-    server.listen(this.port, this.hostname, () => {
+    server.listen(this.port, () => {
       console.log(`Server running at http://${this.hostname}:${this.port}/`)
     })
   }
